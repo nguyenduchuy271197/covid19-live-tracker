@@ -74,6 +74,8 @@ confirmed_graph = dcc.Graph(id="bar_graph", figure=confirmed_fig)
 
 ######## WRITE APP ###########
 app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+app.title = "Covid-19 Live Tracker"
+server = app.server
 
 app.layout = html.Div([
     navbar,
