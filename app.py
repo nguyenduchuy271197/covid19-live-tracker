@@ -5,14 +5,12 @@
 # Created Date: Tue 7 Sep 2021
 # =============================================================================
 
+from dash import dash_table, html, dcc
 import requests
 import pandas as pd
 import plotly.express as px
 import dash
-import dash_table
 import dash_bootstrap_components as dbc
-import dash_html_components as html
-import dash_core_components as dcc
 from utils import *
 from dash.dependencies import Input, Output, State
 
