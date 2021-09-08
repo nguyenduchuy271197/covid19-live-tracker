@@ -6,6 +6,7 @@
 # =============================================================================
 
 from dash import dash_table, html, dcc
+import os
 import requests
 import pandas as pd
 import plotly.express as px
@@ -71,7 +72,7 @@ confirmed_fig = px.bar(country_df.sort_values(by="NewConfirmed", ascending=False
 confirmed_graph = dcc.Graph(id="bar_graph", figure=confirmed_fig)
 
 ######## WRITE APP ###########
-app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = "Covid-19 Live Tracker"
 server = app.server
 
@@ -88,4 +89,5 @@ def update_table(code):
 
 ######## RUN APP ###########
 if __name__ == '__main__':
-    app.run_server()
+    port = os.environ.get("PORT", 9000)
+    app.run_server(host= "0.0.0.0", port=port)
