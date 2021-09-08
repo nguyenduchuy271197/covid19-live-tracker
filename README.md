@@ -1,5 +1,10 @@
 # Covid-19 Live Tracker
 
+### Introduction
+A web dashboard is built in Python, [Dash](https://dash.plot.ly/) and charts made in [Plotly](https://plot.ly/). 
+
+ ![dashboard](images/dashboard.png)
+
 ### Data Source
 https://api.covid19api.com/summary
 
@@ -26,7 +31,6 @@ Run the dashboard web
 ```
 python3 app.py
 ```
-
 
 ### Live Dashboard
 https://plotly-covid19-dashboard.herokuapp.com/
