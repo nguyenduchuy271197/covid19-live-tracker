@@ -1,6 +1,8 @@
 # Covid-19 Live Tracker
-### Live Dashboard
-https://plotly-covid19-dashboard.herokuapp.com/
+
+### Data Source
+https://api.covid19api.com/summary
+
 ### Tutorials
 Firstly, clone the repository to your computer:
 ```
@@ -19,3 +21,6 @@ Install depedencies from `requirements.txt`:
 ```
 pip install -r requirements.txt
 ```
+
+### Live Dashboard
+https://plotly-covid19-dashboard.herokuapp.com/
