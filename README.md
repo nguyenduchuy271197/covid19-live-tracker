@@ -22,5 +22,11 @@ Install depedencies from `requirements.txt`:
 pip install -r requirements.txt
 ```
 
+Run the dashboard web
+```
+python3 app.py
+```
+
+
 ### Live Dashboard
 https://plotly-covid19-dashboard.herokuapp.com/
