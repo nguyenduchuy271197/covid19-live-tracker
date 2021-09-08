@@ -1,7 +1,7 @@
 # Covid-19 Live Tracker
-#### Live Dashboard
+### Live Dashboard
 https://plotly-covid19-dashboard.herokuapp.com/
-# Tutorials
+### Tutorials
 Firstly, clone the repository to your computer:
 ```
 git clone https://github.com/nguyenduchuy271197/covid19-live-tracker.git
